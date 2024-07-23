@@ -1,0 +1,181 @@
+.outerLayer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.userName {
+    width: 240px;
+    height: 70px ;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    margin-inline: auto;
+    display: flex;
+}
+.chatUserName {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+  display: flex;
+}
+.chatUserName1 {
+  width: 50%;
+  height: auto;
+  margin-right: 10px;
+  display: flex;
+}
+.headerAvatar {
+    margin-top: 5px;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+.avatar2 {
+  width: 40px;
+  height: 40px;
+  border: 3px gray solid;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  margin-top: -10px;
+}
+  
+  .outerLayer {
+    display: flex;
+
+  }
+
+  .onlineContainer {
+    width: 250px;
+    background-color: #eff1f3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .chatContainer {
+    background-color: #f0f2f5;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .roomInputContainer,
+  .messageInputContainer {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .roomInput,
+  .messageInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .joinRoomButton,
+  .sendMessageButton {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color:rgba(102, 167, 242, 1);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .joinRoomButton:hover,
+  .sendMessageButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .messagesContainer {
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    padding: 10px;
+    padding-bottom: 15px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .messageRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .messageLeft {
+    justify-content: flex-start;
+  }
+  
+  .messageRight {
+    justify-content: flex-end;
+  }
+  
+  .message {
+    padding: 10px;
+    border-radius: 4px;
+    max-width: 70%;
+    word-wrap: break-word;
+  }
+  
+  .messageMerchant {
+    background:rgba(176, 198, 233, 1);
+    color: white;
+  }
+
+  .system{
+    background: #f9f9f9;
+    color: black;
+    border: 3px rgba(176, 198, 233, 1) solid;
+  }
+  .messageUser {
+    background: rgba(157, 236, 157, 1);
+    color: white;
+  }
+
+  .faAngleRight {
+    margin-right: 10px;
+    margin-left: -10px;
+  }
+
+  .messagesEndRef {
+    width: 15px;
+    margin-bottom: 20px;
+  }
+
+  .messageList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .messageList li {
+    margin-bottom: 5px;
+  }
+  
+  .reservationsOrder {
+    /* float: right; */
+    width: 150px;
+    margin-left: 22px;
+    border: 2px gray solid ;
+    border-radius: 10px;
+    background-color: rgb(246, 199, 139);
+  }

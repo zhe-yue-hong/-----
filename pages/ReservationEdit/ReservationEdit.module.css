@@ -1,0 +1,222 @@
+/* overlay 毛玻璃效果背景 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  /* 毛玻璃效果 */
+  z-index: 999;
+  /* 確保覆蓋在白色方塊之上 */
+  /* display: none; */
+  /* 默認隱藏 */
+}
+
+.square3 {
+  width: 350px;
+  height: 350px;
+  border: 3px solid gray;
+  border-radius: 10px;
+  background-color: #f2ea9d;
+  white-space: nowrap;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  /* display: none; */
+}
+.returnButton {
+  text-decoration: underline;
+}
+
+.returnHomeButton {
+  text-decoration: underline;
+}
+
+/* whiteSquare 白色正方形區塊 */
+
+.reservationPhoto {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  /* 增加 margin-top 來避免與 navbar 重疊 */
+}
+
+.tablesouter {
+  width: 80%;
+  margin: auto;
+}
+
+.tablesdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tablesChairs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+
+  & li {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 50%;
+    border: 4px solid black;
+  }
+
+  & li:hover {
+    border: 4px solid rgba(231, 175, 47, 1);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  & li.active {
+    border: 4px solid rgba(231, 175, 47, 1);
+  }
+}
+
+.numberouter {
+  width: 80%;
+  margin: auto;
+}
+
+.numberdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+.number li {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  border-radius: 50%;
+  border: 4px solid black;
+}
+
+.number li:hover {
+  border: 4px solid rgba(231, 175, 47, 1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.number li.active {
+  border: 4px solid rgba(231, 175, 47, 1);
+}
+
+.central {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.leftButton {
+  width: 30%;
+  height: auto;
+}
+.leftButton button {
+  cursor: pointer;
+}
+.leftButton button:hover {
+  background-color: rgba(231, 175, 47, 1);
+}
+.leftButton button.active {
+  background-color: rgba(231, 175, 47, 1);
+  color: #fff;
+}
+.rightSelect {
+  width: 30%;
+  height: auto;
+}
+
+.reservetextarea {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.confirmButtondiv {
+  display: flex;
+  justify-content: center;
+}
+
+.confirmButtondiv button {
+  border-radius: 5px;
+}
+
+/* .reservationDateTime {
+    display: none;
+  } */
+
+.linearbg {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.disabled {
+  background-color: grey;
+  color: darkgrey;
+}
+
+/* .whiteSquare {
+    position: fixed;
+    top: 50%;
+
+    left: 50%;
+ 
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+ 
+    z-index: 1000;
+ 
+    transform: translate(-50%, -50%);
+ 
+    display: none;
+ 
+    & .returnButton:hover {
+      text-decoration: underline;
+    }
+  }
+  .inquireDiv {
+    
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+
+  }
+
+  .inquirePhoto {
+    max-width: 250px;
+    height: 300px;
+    object-fit:cover;
+  }
+  .white-square3 {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+
+  } */

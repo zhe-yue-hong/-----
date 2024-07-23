@@ -1,0 +1,30 @@
+.CardContainer {
+    display: flex;
+}
+.CreditCardImage {
+    margin-block: auto;
+}
+.CreditCardForm {
+    margin-left: 20px;
+}
+.FormArea1 {
+    display: flex;
+}
+.FormArea2 {
+    display: flex;
+}
+.creditCardNumber {
+    margin-right: 20px;
+}
+
+.creditCardName {
+    margin-right: 20px;
+}
+.errorText {
+    font-weight: bold;
+    color: red;
+}
+.okText {
+    font-weight: bold;
+    color: green;
+}

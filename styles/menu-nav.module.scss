@@ -1,0 +1,25 @@
+$custom-color-1: rgba(176, 143, 122, 0.748); // 自定義顏色
+$custom-color-2: rgba(151, 114, 91, 0.748); // 自定義顏色
+
+// 針對所有連結的基本 hover 效果
+.link {
+  color: $custom-color-2;
+  font-weight: bold;
+
+  &:hover {
+    font-size: 18px;
+    font-weight: bold; // 變粗體
+    color: $custom-color-1; // 更改為主要顏色，可以根據需要更改顏色變數
+  }
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  
+}
+
+
+

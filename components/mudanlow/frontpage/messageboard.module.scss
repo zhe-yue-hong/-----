@@ -1,0 +1,254 @@
+.messageBoard {
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  color: #000;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+  width: 35%;
+  z-index: 2;
+  position: absolute;
+  transition: 1s;
+  font-family: 'LXGW WenKai Mono TC', monospace;
+  font-weight: 900;
+  border-radius: 10px;
+}
+
+.messageBoard:hover {
+  background-color: #465652;
+  color: #fff;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radioInput {
+  display: none;
+}
+
+.star {
+  cursor: pointer;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: #ffd43b !important;
+}
+
+input:checked ~ label .faStar {
+  color: #ffd43b;
+}
+
+.commentBoard {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.commentContent {
+  word-wrap: break-word;
+  width: 270px;
+  height: 100px;
+  font-size: 20px;
+  line-height: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+
+.commentStar {
+  font-size: 28px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.comments {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: grab;
+  animation: marquee 60s linear infinite;
+}
+
+.comments:active {
+  cursor: grabbing;
+}
+
+.highlight {
+  transform: scale(1.2);
+  background-color: rgba(255, 0, 0, 0.7);
+  animation: highlightAnimation 1s ease-in-out;
+}
+
+@keyframes highlightAnimation {
+  from {
+    transform: scale(1.5);
+    background-color: rgba(255, 0, 0, 0.9);
+  }
+  to {
+    transform: scale(1.2);
+    background-color: rgba(255, 0, 0, 0.7);
+  }
+}
+
+.commentContent > .content {
+  margin-top: 10px;
+}
+
+.container > button {
+  margin: 0 10px;
+}
+
+@media (max-width: 540px) {
+  .comments {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .commentStar {
+    font-size: 16px;
+  }
+
+  .commentContent {
+    font-size: 12px;
+  }
+
+  .newsList {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 720px) {
+  .comments {
+    width: 400px;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .commentStar {
+    font-size: 28px;
+  }
+
+  .commentContent {
+    font-size: 18px;
+  }
+
+  .newsList {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 960px) {
+  .comments {
+    width: 600px;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .commentStar {
+    font-size: 32px;
+  }
+
+  .commentContent {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1140px) {
+  .comments {
+    width: 800px;
+    padding: 25px;
+    font-size: 22px;
+  }
+
+  .commentStar {
+    font-size: 36px;
+  }
+
+  .commentContent {
+    font-size: 22px;
+  }
+}
+
+.messageSection {
+  height: 50vh;
+}
+
+.commentBoard {
+  position: absolute;
+}
+
+.commentSection {
+  position: relative;
+  height: 80vh;
+  background-image: url(../../../public/pics/background2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commentSection > h2 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(50vh);
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100vh);
+    opacity: 0;
+  }
+}
+
+.comments {
+  transition: top 0.5s, left 0.5s; /* Add transition for smooth movement */
+}
+
+.expandedComment {
+  position: relative;
+  position: fixed;
+  top: 20%;
+  right: 0;
+  width: 300px;
+  height: auto;
+  background-color: #465652;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.closeButton {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}

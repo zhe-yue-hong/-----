@@ -1,0 +1,82 @@
+.container {
+  background-image: url('/images/product/bg/花2.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.productInfo {
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.productName {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.productCategory {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.productPrice {
+  font-size: 2rem;
+  color: #e74c3c;
+}
+
+.quantityControlWrapper {
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quantityButton {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+}
+
+.quantityDisplay {
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+
+.addToCartButton {
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addToCartButton:hover {
+  background-color: #ff6347;
+}
+.video-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.productModal {
+  background-color: #fff;
+}

@@ -1,0 +1,9 @@
+.form {
+    display: flex;
+}
+.input {
+    width: 80%;
+    margin:auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

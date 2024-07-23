@@ -1,0 +1,8 @@
+$custom-color-1: rgba(176, 143, 122, 0.748); // 自定義顏色
+
+.cardHover {
+  &:hover {
+    font-weight: bold;
+    color: $custom-color-1;
+  }
+}

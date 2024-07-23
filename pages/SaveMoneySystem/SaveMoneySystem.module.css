@@ -1,0 +1,32 @@
+.panel {
+  margin-left: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 2.0;
+  margin: 20px;
+}
+.span {
+  margin-left: 20px;
+}
+.SaveMoneyNumberStyles {
+  margin-block: 10px;
+  margin: auto;
+}
+.moneyText {
+  color: brown;
+  font-size: larger;
+  font-weight: bold;
+}
+.ul {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+.li {
+  margin-bottom: 10px;
+}
+.highlight {
+  font-weight: bold;
+  color: red;
+}
+.sendButton {
+  float: right;
+}
